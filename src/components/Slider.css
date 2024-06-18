@@ -1,0 +1,67 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; /* Alineación horizontal */
+  width: 1890px; /* Ancho máximo del contenedor */
+  margin-top: 165px; /* Espacio superior */
+}
+
+.gallery-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea a la izquierda */
+  margin-right: 20px; /* Espacio entre galería y slider */
+  font-size: 24px; /* Tamaño de los íconos */
+  margin-top: 50px; /* Ajuste del margen superior */
+}
+
+.gallery-icon {
+  margin: 1px; /* Espacio entre los iconos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.gallery-icon span {
+  margin-left: 10px; /* Ajusta el margen izquierdo */
+  font-size: 40px;
+}
+
+.swiper-container {
+  width: 700px; /* Ancho deseado */
+  height: 600px; /* Altura deseada */
+}
+
+.swiper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px; /* Ancho deseado */
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.swiper-slide img {
+  width: 500px; /* Ancho deseado */
+  height: 600px; /* Altura deseada */
+  margin-left: 50px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.swiper-pagination {
+  left: calc(50% + 20px); /* Ajuste para centrar un poco más a la derecha */
+  transform: translateX(-5%);
+  margin-top: 10px; /* Espacio superior ajustado */
+}
+
+

@@ -1,0 +1,40 @@
+.services-title {
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los servicios se envuelvan en múltiples líneas */
+    justify-content: space-around;
+    align-items: flex-start;
+
+  }
+  
+  .service {
+    width: 400px; /* Ajusta el ancho del contenedor de servicio */
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .content {
+    height: 70%; /* Ajusta la altura del contenido */
+    display: flex;
+    flex-direction: column; /* Ajusta el contenido en una columna */
+    justify-content: space-between; /* Espacia uniformemente el contenido */
+  }
+  
+  .content video {
+    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+    height: 500px;
+  }
+  
+  .service h2 {
+    margin-bottom: 10px; /* Espacio entre el título y el contenido */
+  }
+  

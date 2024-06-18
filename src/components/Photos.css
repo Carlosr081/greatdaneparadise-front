@@ -1,0 +1,199 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegúrate de que el banner esté por encima de otros elementos */
+    background-color:#0cb7f2; /* Color de fondo azul */
+    margin-bottom: 50px; /* Espacio inferior */
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+  }
+  
+  .company-name {
+    order: 2;
+    margin: 0 auto;
+    color: #fff; /* Color blanco para el nombre de la empresa */
+  }
+  
+  .social-icons {
+    margin-right: 50px;
+    order: 100;
+    width: auto;
+    margin-left: 10px;
+  }
+  
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    color: #fff; /* Color blanco para el texto de las redes sociales */
+  }
+  
+  .social-links h2 {
+    margin-right: 10px;
+  }
+  
+  .social-icons svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    color: #242424; 
+  }
+  
+  .space-below-banner {
+    height: 150px;
+  }
+  
+  .tiktok-menu {
+    position: relative;
+    cursor: pointer;
+  }
+  .icon-hover {
+    transition: filter 0.3s ease-in-out; /* Agrega una transición suave */
+  }
+  
+  .icon-hover:hover {
+    filter: brightness(2.0); /* Ajusta el brillo para iluminar el icono */
+  }
+  
+  
+  .tiktok-menu-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 120px;
+    padding: 10px;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    top: calc(100% + 10px);
+    left: 0;
+  }
+  
+  .tiktok-menu-content.show {
+    display: block;
+  }
+  
+  .tiktok-menu-content a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+  }
+  
+  .tiktok-menu-content a:hover {
+    background-color: #f2f2f2;
+  }
+  
+
+  
+  /* Estilos para pantallas pequeñas (móviles) */
+  @media screen and (max-width: 768px) {
+    .banner {
+      padding: 10px; /* Reduce el padding del banner */
+    }
+  
+    .logo img {
+      width: 80px; /* Cambia el tamaño del logo */
+      height: 80px; /* Cambia el tamaño del logo */
+      margin-left: 5px; /* Reduce el margen izquierdo */
+    }
+  
+    .company-name {
+      margin: 0; /* Elimina el margen */
+      font-size: 20px; /* Aumenta el tamaño del texto */
+    }
+  
+    .social-icons {
+      display: none; /* Oculta los iconos de redes sociales */
+    }
+  
+    .space-below-banner {
+      height: 100px; /* Reduce la altura del espacio debajo del banner */
+    }
+  }
+  
+  
+/* Galería */
+.gallery {
+    text-align: center;
+  }
+  
+  .photo-grid {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Crea columnas automáticas que se ajustan al ancho del contenedor */
+    grid-gap: 20px; /* Espacio entre las imágenes */
+    justify-items: center;
+  }
+  
+  .photo {
+    border: 2px solid #ccc; /* Añade un borde alrededor de cada imagen */
+    border-radius: 8px; /* Redondea las esquinas del borde */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+  }
+  
+  .photo-img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Altura al 100% del contenedor */
+    object-fit: cover; /* Escala la imagen para que llene el contenedor manteniendo su relación de aspecto */
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .photo:hover .photo-img,
+  .photo:focus .photo-img {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen al pasar el mouse */
+  }
+  
+  /* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal1 {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1280px; /* Ancho máximo del modal */
+    max-height: 720px; /* Altura máxima del modal */
+    width: 90%; /* Ancho del modal */
+    height: 90%; /* Altura del modal */
+    overflow: hidden;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen para que mantenga su relación de aspecto y se ajuste al contenedor */
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,70 @@
+/* Estilos para formato desktop */
+.banner {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos a lo largo del espacio disponible */
+  align-items: center;
+  width: 100%; /* Ajusta el ancho al 100% */
+  height: 150px; /* Ajusta la altura según sea necesario */
+  background-color: #0cb7f2;
+  padding: 0 20px; /* Espacio interno a los lados del banner */
+  position: relative; /* Establece posición relativa para alinear las redes sociales */
+}
+
+.logo {
+  flex: 0 0 auto; /* El logo no debe crecer, tamaño automático */
+}
+
+.company-name {
+  flex: 1; /* El nombre de la empresa ocupa todo el espacio restante */
+  display: flex;
+  text-align: center;
+  font-size: 15px;
+  flex-direction: column;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 0; /* Alinea los íconos de redes sociales abajo */
+  right: 80px; /* Ajusta el margen derecho según sea necesario */
+  display: flex;
+  flex-direction: column; /* Coloca los íconos en una columna */
+  align-items: center; /* Alinea los íconos a la derecha */
+  margin-bottom: 50px;
+
+}
+
+.social-title {
+  text-align: center; /* Centra el texto */
+  margin-bottom: 10px; /* Espacio entre el título y los íconos */
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-links a {
+  color: #0a0a0a;
+  font-size: 24px;
+  margin-left: 10px; /* Espacio entre íconos de redes sociales */
+}
+
+.tiktok-menu {
+  cursor: pointer;
+}
+
+.tiktok-menu-content {
+  top: 100%;
+  left: 0;
+  background-color: #313030;
+  width: 10px; /* Ajusta el ancho del menú desplegable */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: none;
+}
+
+.tiktok-menu-content.show {
+  display: block;
+}
+
+

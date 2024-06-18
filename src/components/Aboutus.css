@@ -1,0 +1,53 @@
+.about-us-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between; /* Ajusta el espacio entre los elementos */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas adicionales */
+    background-color: #eee9e9;
+  }
+  
+  .about-us-text {
+    margin-left: 50px;
+    width: 50%;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .about-us-text h1 {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Agrega el efecto de sombra al título */
+    text-align: center;
+  }
+  
+  .slider-container1 {
+    width:600px;
+    height: 600px;
+    overflow: hidden; /* Evita que las imágenes se desborden */
+    margin-right: 100px;
+  }
+  
+  .slider-container1 .slick-list {
+    width: 100%;
+  }
+  
+  .slider-container1 .slick-slide {
+    height: auto; /* Ajusta la altura de las diapositivas automáticamente */
+  }
+  
+  .slider-container1 img {
+    max-width: 100%; /* Establece el ancho máximo de las imágenes al 100% del contenedor */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+
+  }
+  
+  /* Estilos para pantallas pequeñas (móviles) */
+  @media screen and (max-width: 768px) {
+    .about-us-text {
+      width: 100%; /* Utiliza el ancho completo en pantallas pequeñas */
+    }
+  
+    .slider-container1 {
+      width: 100%; /* Utiliza el ancho completo en pantallas pequeñas */
+    }
+  }
+  
